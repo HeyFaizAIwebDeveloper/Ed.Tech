@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Cross2Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 
+
 const Navbar = () => {
     const links = [
         { href: "/", label: "Home" },
@@ -16,14 +17,15 @@ const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
+  
+
     function handleMenuToggle() {
         setIsOpen(!isOpen);
-        console.log(isOpen);
     }
 
     return (
-        <nav className="relative h-16 ">
-            <div className=" w-full max-w-5xl fixed  top-1  transform left-1/2 -translate-x-1/2 h-16 flex justify-between items-center mx-auto  px-4  bg-slate-100/5 rounded-full backdrop-blur-sm">
+        <nav className="  w-full max-w-5xl fixed  top-1  transform left-1/2 -translate-x-1/2 h-16 flex justify-between items-center mx-auto  px-4  bg-slate-100/5 rounded-full backdrop-blur-sm ">
+           
                 {/* LOGO CONTAINER  */}
                 <Link href={"/"}>
                     <Image
@@ -53,12 +55,12 @@ const Navbar = () => {
 
                 {/* LOGIN BUTTON  */}
                 <div className=" hidden md:block">
-                    <Link
-                        href={"/logIn"}
-                        className=" py-2  px-4  rounded-full border border-purple-700 bg-black/20 hover:bg-purple-600 transition-all duration-300 ease-in-out"
-                    >
-                        Login
-                    </Link>
+                        <Link
+                            href={"/logIn"}
+                            className=" py-2  px-4  rounded-full border border-purple-700 bg-black/20 hover:bg-purple-600 transition-all duration-300 ease-in-out"
+                        >
+                            Login
+                        </Link>
                 </div>
 
                 {/* MOBILE MENU  */}
@@ -117,7 +119,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-            </div>
+            
         </nav>
     );
 };

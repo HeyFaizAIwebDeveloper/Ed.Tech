@@ -180,7 +180,7 @@ const LoginForm = () => {
 
                             <div className=" py-2.5">
                                 <p className=" text-sm font-light ">
-                                    Don't have an account ?{" "}
+                                    Don&apos;t have an account ?{" "}
                                     <Link
                                         href={"/signUp"}
                                         className=" text-purple-600 transition-all duration-500 ease-in-out hover:underline  underline-offset-4"

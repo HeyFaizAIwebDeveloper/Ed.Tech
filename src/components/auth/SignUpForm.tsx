@@ -78,7 +78,7 @@ const SignUpForm = () => {
                         {/* HEADING CONTAINER */}
                         <div className=" py-5">
                             <h1 className=" capitalize text-purple-500 ">
-                                Let's get started
+                                Let&apos;s get started
                             </h1>
                             <h2 className="text-2xl font-medium capitalize">
                                 Your{" "}
